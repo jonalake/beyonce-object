@@ -261,5 +261,3 @@ function hairStyleFrequency() {
   .flatMap(hit => hit.hair)
   .reduce((object, hair) => (object[hair] = ++object[hair] || 1, object), {})
 }
-
-console.log(hairStyleFrequency())
